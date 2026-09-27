@@ -86,3 +86,9 @@ Local Pro is 2.78 percentage points above the historical GPT-4 reference and 0.7
 Qwen supplies the base model; MLX-community supplies the quantized conversion. Aiden's contribution is execution/evaluation integration, tracking, reporting code and reproducibility documentation, with Codex development assistance. No underlying foundation-model training is claimed.
 
 [Third-party notices](THIRD_PARTY_NOTICES.md) distinguish external code from original contributions. Original-code MIT is a proposal only; no open-source grant is made. Raw responses, IFEval prompts, Punkt tables, weights, credentials and operational ledgers are excluded. PRIVATE review upload is separately authorized; PUBLIC release still requires license selection and final content/visibility approval.
+
+### Final upload integrity
+
+`python3 -B scripts/verify_upload.py` checks the entire candidate file set and Git-tracked file set against `UPLOAD_ALLOWLIST.json`, rejecting missing, unexpected, symlinked or modified files. Run on a clean checkout; keep generated reports outside it. The payload hash binds sorted file hashes and paths, excluding the self-index to avoid recursion; Git binds the index itself. This is integrity verification, not cryptographic publisher authentication or a guarantee that automated secret scanning finds every secret.
+
+Current closeout remains **PRIVATE / PUBLICATION_HELD**: the conditional public-transition instruction does not choose an original-code license. MIT has not been applied. Historical measurement metadata is preserved unchanged.

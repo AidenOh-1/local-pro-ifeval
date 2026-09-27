@@ -8,6 +8,6 @@ IFEval prompt data and NLTK Punkt tables are excluded because component-level re
 
 Model attribution: mlx-community/Qwen3.8-27B-4bit revision3e6447f082e89cc7f0bc6e5441afd38dfce760ff, converted from named Qwen/Qwen3.8-27B; exact base conversion commit unresolved. Stored scores are project's generated numeric/boolean verdicts, not response prose.
 
-External chart contains a small factual summary of DeepSeek's table with source attribution, not copied report text/images or independent measurements. No private LinkedIn draft, research history, approvals, hidden data or process logs are uploaded.
+External chart contains small factual summaries of the original IFEval paper, Qwen3 Technical Report and DeepSeek-V3 table with source attribution, not copied report text/images or independent measurements. No private LinkedIn draft, research history, approvals, hidden data or process logs are uploaded.
 
-PUBLICATION_HELD: owner license choice, final text/files and explicit PUBLIC transition remain outstanding. Excluded assets require separate rights review if ever added.
+PUBLICATION_HELD / PRIVATE: no explicit original-code license selection was found in the reviewed owner instructions and handoff. The latest closeout instruction permits PUBLIC only after all conditions clear; it does not select MIT. No public transition is performed while the license gate remains open. Excluded assets require separate rights review if ever added.
