@@ -1,15 +1,16 @@
 {
   "files": {
     ".gitignore": "f6f14b9967a55eebc388331d844f1b77181bf5a1769d89128c34ad5dcb6bb527",
-    "AGENTS.md": "839acda727f970a0c17e16cef498164c8d86174dabce74afbfea042273031b28",
-    "README.md": "5f6b65c38272017d2d5040ebb54f3a596189dd363ee857c06d7bc9f2b1d09991",
-    "THIRD_PARTY_NOTICES.md": "7de8d24bf9e0db1b08b0a64787a9031d2bb8f27c68d2d92841f9938e97600a04",
+    "AGENTS.md": "912ff97c1d5006b08103e22dd507daf60b943980c534cdd1c0694a66dff653e3",
+    "LICENSE": "5644fb80b9a5cd2ea7499060435a3742b313531a8937b5115d1758a44794f111",
+    "README.md": "6026949dbf2eea855cdff51cab4c01d82fec488a60830177312b67fe6e0ac075",
+    "THIRD_PARTY_NOTICES.md": "08d90551134b1ef8b5fc9f35fa295403db2c0047172336b31420e82420e2da05",
     "assets/external-context.png": "ac299c699abff94072ea2ef1dd91506d8ebb332fe912b5b607174808f742fab6",
     "assets/external-context.svg": "a0826f233673945c39aa3f72f38634d0a52a1bb31257a01752d38034bb27578b",
     "assets/ifeval.png": "17982ffff54ceff2872e40c3b9656ec925276e3e5994017e6f04d2020ba8fcd7",
     "assets/ifeval.svg": "3b1a3ea13c5e68229eec8efd91e1469f2f75423e86c45b0427ee7e8d9a60db75",
     "config.json": "499da9bdc9a6b164d346f357ea48c74415a60280e1622aa8154e77c90e550d33",
-    "docs/CLOSEOUT_REVIEW.md": "4e5842d7fa3e59c69ca33e7f113d98d7a631ded82277ff5668f9874c77841326",
+    "docs/CLOSEOUT_REVIEW.md": "9e04b3b7d71a9f6e4796c4f45ce235821037a889d34e10cd7a53f150dbce0e1e",
     "docs/EXCLUDED_ASSETS.json": "9ed7979ff93861b4e4380912766445cc89f59a01bddeecef390fe05a0b155d3f",
     "docs/EXTERNAL_CONTEXT.md": "c3ca14d3ae09ca011ea6c8e61335bb045af439f7d122594d6df3aac4a9c153a2",
     "docs/OPTIONAL_PATHS.md": "366096d88639236dc6f8030974a1ecaa69d571845fb4409c2959b318bb750d41",
@@ -28,7 +29,7 @@
     "results/v0.1/summary.json": "03ec3d93a4f7ac2c92eb341fa7c007a3ee6bd065ccd597fb2ef352f0d5be0c15",
     "scripts/plot_results.py": "86a0d3ecdb45ca32a2b6755378c41a6ab52731a0d92140961aa291cf32f1b24b",
     "scripts/verify_upload.py": "389f29916eda3fb97de09aac9249e6b48b40df4ab6082be70e240c80f01be9bb",
-    "skills/release-eval/SKILL.md": "af3496e54d76b22ca769b2f23ed45ea4e275f64e05dcce7056b5510a31d5bcdc",
+    "skills/release-eval/SKILL.md": "f1fa70469eb75ce3d3777b2b0e61eeb53c4c17dc01599c49c617d04ec5304fa4",
     "src/local_pro_release/__init__.py": "2b0307f319e410f5f97166c36c9972cbfaee86ec65ae2eced1b9886c7a3cad9a",
     "src/local_pro_release/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
     "src/local_pro_release/cli.py": "811c1b7b727b78f16d897881dbc88584bf2b43b54fee16d83a45273daee61950",
@@ -44,8 +45,8 @@
     "vendor/instruction_following_eval/instructions_util.py": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
     "vendor/instruction_following_eval/requirements.txt": "1b1716c9ac21b9cc2bd0d7354ed8f7b6982ccf35598529601a7c08508acec94a"
   },
-  "payload_sha256": "1850374eaa7439da9012e98ec165a066ebef1b5304c3d7410c0aff6dbc4a2d1c",
+  "payload_sha256": "9c27651266a6092fa23479efa815e4bd3c48a6c293a6f83e163567d4c8be0867",
   "definition": "SHA256 of sorted UTF-8 file-hash + two spaces + relative path + newline; self-index excluded",
-  "visibility_required": "PRIVATE",
-  "public_status": "PUBLICATION_HELD"
+  "visibility_required": "PUBLIC",
+  "public_status": "OWNER_AUTHORIZED_PENDING_REMOTE_VERIFICATION"
 }

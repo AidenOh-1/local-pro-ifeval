@@ -2,7 +2,7 @@
 
 Local Pro is a local LLM evaluation harness and results package developed on a MacBook Pro, using a pinned Qwen-based 27B 4-bit MLX artifact and the original IFEval scorer.
 
-**431/541 · 79.67% strict prompt accuracy.** Private review candidate; **PUBLICATION_HELD** remains for a future public release. This repository is code and a reproducible reporting package, not a newly trained foundation model.
+**431/541 · 79.67% strict prompt accuracy.** Original Local Pro code and associated documentation are licensed under [MIT](LICENSE). This repository is code and a reproducible reporting package, not a newly trained foundation model.
 
 ![Local Pro IFEval scorecard](assets/ifeval.svg)
 
@@ -85,10 +85,10 @@ Local Pro is 2.78 percentage points above the historical GPT-4 reference and 0.7
 
 Qwen supplies the base model; MLX-community supplies the quantized conversion. Aiden's contribution is execution/evaluation integration, tracking, reporting code and reproducibility documentation, with Codex development assistance. No underlying foundation-model training is claimed.
 
-[Third-party notices](THIRD_PARTY_NOTICES.md) distinguish external code from original contributions. Original-code MIT is a proposal only; no open-source grant is made. Raw responses, IFEval prompts, Punkt tables, weights, credentials and operational ledgers are excluded. PRIVATE review upload is separately authorized; PUBLIC release still requires license selection and final content/visibility approval.
+Original Local Pro code and associated documentation are licensed under MIT, Copyright (c) 2026 Aiden Oh. Third-party components retain their respective licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). In particular, vendored IFEval code remains Apache-2.0. Raw responses, IFEval prompts, Punkt tables, weights, credentials and operational ledgers are excluded; this license does not grant rights to those excluded assets.
 
 ### Final upload integrity
 
 `python3 -B scripts/verify_upload.py` checks the entire candidate file set and Git-tracked file set against `UPLOAD_ALLOWLIST.json`, rejecting missing, unexpected, symlinked or modified files. Run on a clean checkout; keep generated reports outside it. The payload hash binds sorted file hashes and paths, excluding the self-index to avoid recursion; Git binds the index itself. This is integrity verification, not cryptographic publisher authentication or a guarantee that automated secret scanning finds every secret.
 
-Current closeout remains **PRIVATE / PUBLICATION_HELD**: the conditional public-transition instruction does not choose an original-code license. MIT has not been applied. Historical measurement metadata is preserved unchanged.
+The owner explicitly selected MIT for original contributions and authorized this repository's public transition on September 27, 2026, subject to final integrity checks. Historical measurement metadata and earlier private-review decisions are preserved as dated records, not current licensing restrictions.

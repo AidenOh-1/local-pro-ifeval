@@ -25,4 +25,8 @@ python3 -B scripts/plot_results.py --output /tmp/local-pro-closeout-graphs-20260
 python3 -B scripts/verify_upload.py
 ```
 
-New model calls, loads, registrations and public transitions: zero. No raw-response rescoring or fresh inference is claimed. Remaining owner decision: explicit license selection for original contributions before publication review can clear.
+New model calls, loads, registrations and public transitions: zero. No raw-response rescoring or fresh inference is claimed. Remaining owner decision at that review: explicit license selection for original contributions before publication review can clear.
+
+## Subsequent owner decision — 2026-09-27
+
+The owner explicitly selected standard MIT for original contributions (Copyright (c) 2026 Aiden Oh) and authorized final checks, commit/push and a conditional PUBLIC transition of AidenOh-1/local-pro-ifeval. Root LICENSE implements that selection; third-party Apache-2.0 and excluded-asset restrictions are preserved. Above review results and private-state observations remain historical. This addendum records authorization and preparation, not an assertion that GitHub visibility has already changed. Final visibility is verified separately after push.
