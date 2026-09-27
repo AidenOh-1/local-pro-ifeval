@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "planned": 541,
+  "responses_scored": 541,
+  "blocked": 0,
+  "missing": 0,
+  "length": 9,
+  "metrics": {
+    "strict_prompt": {
+      "correct": 431,
+      "denominator": 541,
+      "partial_accuracy": 0.7966728280961183,
+      "full_accuracy": 0.7966728280961183
+    },
+    "strict_instruction": {
+      "correct": 715,
+      "denominator": 834,
+      "partial_accuracy": 0.8573141486810552,
+      "full_accuracy": 0.8573141486810552
+    },
+    "loose_prompt": {
+      "correct": 452,
+      "denominator": 541,
+      "partial_accuracy": 0.8354898336414048,
+      "full_accuracy": 0.8354898336414048
+    },
+    "loose_instruction": {
+      "correct": 740,
+      "denominator": 834,
+      "partial_accuracy": 0.8872901678657075,
+      "full_accuracy": 0.8872901678657075
+    }
+  },
+  "observed_resources": {
+    "generated_tokens": {
+      "coverage": 541,
+      "responses": 541,
+      "sum": 181668
+    },
+    "prompt_tokens": {
+      "coverage": 541,
+      "responses": 541,
+      "sum": 31739
+    },
+    "wall_seconds": {
+      "coverage": 541,
+      "responses": 541,
+      "sum": 6313.348987158759
+    }
+  },
+  "config_sha256": "499da9bdc9a6b164d346f357ea48c74415a60280e1622aa8154e77c90e550d33",
+  "scores_sha256": "f564c1c431bd085ef183e20689653a00cdc61f0831886b3e99307eee8b83d5cc",
+  "public_release": false,
+  "independent_hidden": false
+}

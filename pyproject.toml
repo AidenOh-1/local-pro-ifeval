@@ -1,0 +1,8 @@
+[project]
+name = "local-pro-release"
+version = "0.1.0"
+description = "Offline-first fixed P0 IFEval evaluation harness"
+requires-python = ">=3.12"
+
+# Use PYTHONPATH=src with the pinned evaluator environment. Installation and a
+# clean-environment dependency solve are not claimed or performed in this task.

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "dataset": {
+    "path": "data/ifeval.jsonl",
+    "sha256": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+    "count": 541,
+    "revision": "e6890f85757dd84e27ca6df2dd30651dafad28e0"
+  },
+  "model": {
+    "repository": "mlx-community/Qwen3.8-27B-4bit",
+    "revision": "3e6447f082e89cc7f0bc6e5441afd38dfce760ff",
+    "quantization": "MLX affine 4-bit group_size=64",
+    "source_model": "Qwen/Qwen3.8-27B",
+    "source_revision_declared_by_quantizer": null,
+    "provenance_note": "Community quantizer declares the named source model, but no exact source commit was found in the inspected card. Base revision is the publisher revision observed today, not a proven conversion input. Artifact commit is pinned independently.",
+    "tokenizer_identity": {
+      "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "tokenizer_config.json": "792fa3f0cb88b111e54ef3134c873531008c4df471d108da17903426e308aa7b",
+      "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    "chat_template_identity": {
+      "chat_template.jinja": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    }
+  },
+  "generation": {
+    "context_tokens": 8192,
+    "max_new_tokens": 2048,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42,
+    "enable_thinking": false,
+    "reasoning_effort": "low"
+  },
+  "p0": {
+    "messages": "one user message containing exact original prompt; no system message",
+    "condition": "P0"
+  },
+  "runtime": {
+    "backend_name": "mlx",
+    "canonical": true,
+    "runtime_name": "mlx-vlm",
+    "runtime_version": "0.7.0",
+    "versions": {
+      "huggingface-hub": "1.30.0",
+      "mlx": "0.32.2",
+      "mlx-audio": "0.5.3",
+      "mlx-metal": "0.32.2",
+      "mlx-vlm": "0.7.0",
+      "python": "3.12.13",
+      "tokenizers": "0.23.2",
+      "transformers": "5.16.1"
+    }
+  },
+  "scorer": {
+    "revision": "e6890f85757dd84e27ca6df2dd30651dafad28e0",
+    "seed": 42
+  },
+  "cache_rule": "earliest verified run_id; score/length/empty content never affect eligibility",
+  "hashes": {
+    "requirements.lock.txt": "e5869e4f11858c5b793bf1f540fe55dbc98f3016ddf9b602e0a296a11544e5ae",
+    "data/ifeval.jsonl": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+    "vendor/ifeval_LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "vendor/nltk_data_LICENSE_current.txt": "8d030ab5afc58f0b6a1f4207c12fd9553de6da2294efede65a0c58f9a6495fcc",
+    "nltk_data/tokenizers/punkt_tab/README": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4",
+    "nltk_data/tokenizers/punkt_tab/english/sent_starters.txt": "f3f8535483e1dba487241b764945168123bca3209a9645e59acd1225dc76edac",
+    "nltk_data/tokenizers/punkt_tab/english/abbrev_types.txt": "92a3e070f43d9b4c5534758ca40ad7343b04e7e29bfe0c2eb658a39445a4f779",
+    "nltk_data/tokenizers/punkt_tab/english/ortho_context.tab": "4bbcca25ed3d3f06c02402abf8419b9f033b8adc06e7b482eca4e45f81a5dc4c",
+    "nltk_data/tokenizers/punkt_tab/english/collocations.tab": "8e2da1225e4dd2cc9dba261ee231ccb134859e21b46006e7f472c5ee269af0cf",
+    "vendor/instruction_following_eval/requirements.txt": "1b1716c9ac21b9cc2bd0d7354ed8f7b6982ccf35598529601a7c08508acec94a",
+    "vendor/instruction_following_eval/instructions.py": "60e086f5342a03ce8e18b64bbcccf86308f523c08aa826707a562150a52f3edf",
+    "vendor/instruction_following_eval/evaluation_main.py": "e6df07a04d25a0e7134933ba2400c26e0129a243e449c88df55043e583fc4b4a",
+    "vendor/instruction_following_eval/evaluation_lib.py": "35decc06000718487f44d7deafa6d3f48a8ec0886281edf40162c0265b7d248c",
+    "vendor/instruction_following_eval/README.md": "fef3c44408e4b39837af345095ccce7da798853fd60ea94a1de63afa9d3d67b3",
+    "vendor/instruction_following_eval/instructions_util.py": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
+    "vendor/instruction_following_eval/instructions_registry.py": "ec92d72c264f6d906978613085db262356174300370a3fffe6fefd5969ce9cfc"
+  },
+  "model_calls_authorized": 0,
+  "publication": "LOCAL_PREPARATION_ONLY"
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.1-full-ifeval-rc2",
+  "config_sha256": "499da9bdc9a6b164d346f357ea48c74415a60280e1622aa8154e77c90e550d33",
+  "raw_response_file_sha256": "474821e36b95efdc6b38bfc0c7fc1bd1e4a7443f66a61bd9da92574ab9e61912",
+  "scores_sha256": "f564c1c431bd085ef183e20689653a00cdc61f0831886b3e99307eee8b83d5cc",
+  "source_final_spec_sha256": "b8c8b7d24d2f15379a50dd99f7c69f1bedc6d901a20c70f7ad8b1be06beaa0e0",
+  "measured_code_sha256": "c4a5ff5ad0a3da5e304750e7077eb99ec4e970608f4a9513d05f0c41b77c7072",
+  "coverage": 541,
+  "cache": 78,
+  "new": 463,
+  "length": 9,
+  "retry": 0,
+  "model_calls_this_task": 0,
+  "raw_included": false,
+  "source_candidate": "0.1-full-ifeval-rc1",
+  "publication": false
+}

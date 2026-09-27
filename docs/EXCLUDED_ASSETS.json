@@ -1,0 +1,26 @@
+{
+  "reason": "Redistribution coverage not established; excluded only from upload copy",
+  "required_for_score": {
+    "requirements.lock.txt": "e5869e4f11858c5b793bf1f540fe55dbc98f3016ddf9b602e0a296a11544e5ae",
+    "data/ifeval.jsonl": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+    "vendor/ifeval_LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "vendor/nltk_data_LICENSE_current.txt": "8d030ab5afc58f0b6a1f4207c12fd9553de6da2294efede65a0c58f9a6495fcc",
+    "nltk_data/tokenizers/punkt_tab/README": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4",
+    "nltk_data/tokenizers/punkt_tab/english/sent_starters.txt": "f3f8535483e1dba487241b764945168123bca3209a9645e59acd1225dc76edac",
+    "nltk_data/tokenizers/punkt_tab/english/abbrev_types.txt": "92a3e070f43d9b4c5534758ca40ad7343b04e7e29bfe0c2eb658a39445a4f779",
+    "nltk_data/tokenizers/punkt_tab/english/ortho_context.tab": "4bbcca25ed3d3f06c02402abf8419b9f033b8adc06e7b482eca4e45f81a5dc4c",
+    "nltk_data/tokenizers/punkt_tab/english/collocations.tab": "8e2da1225e4dd2cc9dba261ee231ccb134859e21b46006e7f472c5ee269af0cf",
+    "vendor/instruction_following_eval/requirements.txt": "1b1716c9ac21b9cc2bd0d7354ed8f7b6982ccf35598529601a7c08508acec94a",
+    "vendor/instruction_following_eval/instructions.py": "60e086f5342a03ce8e18b64bbcccf86308f523c08aa826707a562150a52f3edf",
+    "vendor/instruction_following_eval/evaluation_main.py": "e6df07a04d25a0e7134933ba2400c26e0129a243e449c88df55043e583fc4b4a",
+    "vendor/instruction_following_eval/evaluation_lib.py": "35decc06000718487f44d7deafa6d3f48a8ec0886281edf40162c0265b7d248c",
+    "vendor/instruction_following_eval/README.md": "fef3c44408e4b39837af345095ccce7da798853fd60ea94a1de63afa9d3d67b3",
+    "vendor/instruction_following_eval/instructions_util.py": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
+    "vendor/instruction_following_eval/instructions_registry.py": "ec92d72c264f6d906978613085db262356174300370a3fffe6fefd5969ce9cfc"
+  },
+  "raw_sha256": "474821e36b95efdc6b38bfc0c7fc1bd1e4a7443f66a61bd9da92574ab9e61912",
+  "dataset_revision": "e6890f85757dd84e27ca6df2dd30651dafad28e0",
+  "punkt_revision": "4f15a3d89eefe9748ec1c05be495d91289197155",
+  "dataset_url": "https://github.com/google-research/google-research/blob/e6890f85757dd84e27ca6df2dd30651dafad28e0/instruction_following_eval/data/input_data.jsonl",
+  "punkt_url": "https://github.com/nltk/nltk_data/tree/4f15a3d89eefe9748ec1c05be495d91289197155"
+}

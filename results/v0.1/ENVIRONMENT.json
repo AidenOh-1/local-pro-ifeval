@@ -1,0 +1,38 @@
+{
+  "recorded_hardware_profile": {
+    "observed_at": "2026-09-09T15:52:23.325413+00:00",
+    "model_name": "MacBook Pro",
+    "model_identifier": "Mac17,6",
+    "chip": "Apple M5 Max",
+    "architecture": "arm64",
+    "cpu_cores": 18,
+    "gpu_cores": 40,
+    "unified_memory_bytes": 51539607552,
+    "macos_version": "26.6.2",
+    "macos_build": "25G83"
+  },
+  "profile_sha256": "15405c594f110e9b1c26d7c2d07726d0c2eed8cc1418c1267a25981f04e48132",
+  "new463_load_physical_memory_bytes": [
+    51539607552
+  ],
+  "hardware_limit": "Run records reference this earlier profile by path, not a contemporaneous content hash. Chip/core counts/macOS are historical profile values, not fresh run-time attestations. Cached runs need not represent one fresh session.",
+  "generation_runtime": {
+    "backend_name": "mlx",
+    "canonical": true,
+    "runtime_name": "mlx-vlm",
+    "runtime_version": "0.7.0",
+    "versions": {
+      "huggingface-hub": "1.30.0",
+      "mlx": "0.32.2",
+      "mlx-audio": "0.5.3",
+      "mlx-metal": "0.32.2",
+      "mlx-vlm": "0.7.0",
+      "python": "3.12.13",
+      "tokenizers": "0.23.2",
+      "transformers": "5.16.1"
+    }
+  },
+  "scoring_python": "3.13.0",
+  "scoring_dependencies": "requirements.lock.txt",
+  "fresh_machine_test": false
+}

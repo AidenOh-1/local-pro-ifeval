@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="456" viewBox="0 0 1100 456" role="img">
+<title>Historical IFEval reference context</title>
+<rect width="1100" height="456" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<text x="30" y="38" font-size="24">Historical IFEval reference context</text>
+<text x="30" y="65" font-size="14">Different evaluation setups; not a head-to-head comparison.</text>
+<path d="M365.0 90 V366" stroke="#d9e2ec"/>
+<text x="355.0" y="390" font-size="13">0%</text>
+<path d="M461.0 90 V366" stroke="#d9e2ec"/>
+<text x="451.0" y="390" font-size="13">20%</text>
+<path d="M557.0 90 V366" stroke="#d9e2ec"/>
+<text x="547.0" y="390" font-size="13">40%</text>
+<path d="M653.0 90 V366" stroke="#d9e2ec"/>
+<text x="643.0" y="390" font-size="13">60%</text>
+<path d="M749.0 90 V366" stroke="#d9e2ec"/>
+<text x="739.0" y="390" font-size="13">80%</text>
+<path d="M845.0 90 V366" stroke="#d9e2ec"/>
+<text x="835.0" y="390" font-size="13">100%</text>
+<text x="30" y="129" font-size="17">Local Pro P0</text>
+<text x="30" y="151" font-size="12">Own measurement · 2026-09-24/25 · 431/541</text>
+<rect x="365" y="110" width="382.40296" height="34" fill="#166b69" rx="4" data-value="79.6672828096"/>
+<text x="865" y="133" font-size="16">79.67%</text>
+<text x="30" y="211" font-size="17">GPT-4o 0513</text>
+<text x="30" y="233" font-size="12">DeepSeek report · Evaluation date not stated</text>
+<rect x="365" y="192" width="404.64000" height="34" fill="#667b9b" rx="4" data-value="84.3000000000"/>
+<text x="865" y="215" font-size="16">84.30%</text>
+<text x="30" y="293" font-size="17">Claude-3.5-Sonnet-1022</text>
+<text x="30" y="315" font-size="12">DeepSeek report · Evaluation date not stated</text>
+<rect x="365" y="274" width="415.20000" height="34" fill="#667b9b" rx="4" data-value="86.5000000000"/>
+<text x="865" y="297" font-size="16">86.50%</text>
+<text x="30" y="419" font-size="13">Source: DeepSeek-V3 README · Fixed source revision in external_references.json</text>
+<text x="30" y="438" font-size="13">External: 8K output, repeated sampling; Local Pro: 2048 output, one response/item.</text>
+</g></svg>

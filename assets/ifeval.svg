@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="538" viewBox="0 0 1100 538" role="img">
+<title>Local Pro v0.1 · IFEval</title>
+<rect width="1100" height="538" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<text x="30" y="38" font-size="24">Local Pro v0.1 · IFEval</text>
+<text x="30" y="65" font-size="14">541 prompts / 834 instruction checks · Original scorer · Public benchmark self-evaluation</text>
+<path d="M365.0 90 V448" stroke="#d9e2ec"/>
+<text x="355.0" y="472" font-size="13">0%</text>
+<path d="M461.0 90 V448" stroke="#d9e2ec"/>
+<text x="451.0" y="472" font-size="13">20%</text>
+<path d="M557.0 90 V448" stroke="#d9e2ec"/>
+<text x="547.0" y="472" font-size="13">40%</text>
+<path d="M653.0 90 V448" stroke="#d9e2ec"/>
+<text x="643.0" y="472" font-size="13">60%</text>
+<path d="M749.0 90 V448" stroke="#d9e2ec"/>
+<text x="739.0" y="472" font-size="13">80%</text>
+<path d="M845.0 90 V448" stroke="#d9e2ec"/>
+<text x="835.0" y="472" font-size="13">100%</text>
+<text x="30" y="129" font-size="17">Strict prompt · PRIMARY</text>
+<text x="30" y="151" font-size="12">431/541</text>
+<rect x="365" y="110" width="382.40296" height="34" fill="#166b69" rx="4" data-value="79.6672828096"/>
+<text x="865" y="133" font-size="16">79.67% · 431/541</text>
+<text x="30" y="211" font-size="17">Strict instruction · auxiliary</text>
+<text x="30" y="233" font-size="12">715/834</text>
+<rect x="365" y="192" width="411.51079" height="34" fill="#667b9b" rx="4" data-value="85.7314148681"/>
+<text x="865" y="215" font-size="16">85.73% · 715/834</text>
+<text x="30" y="293" font-size="17">Loose prompt · auxiliary</text>
+<text x="30" y="315" font-size="12">452/541</text>
+<rect x="365" y="274" width="401.03512" height="34" fill="#667b9b" rx="4" data-value="83.5489833641"/>
+<text x="865" y="297" font-size="16">83.55% · 452/541</text>
+<text x="30" y="375" font-size="17">Loose instruction · auxiliary</text>
+<text x="30" y="397" font-size="12">740/834</text>
+<rect x="365" y="356" width="425.89928" height="34" fill="#667b9b" rx="4" data-value="88.7290167866"/>
+<text x="865" y="379" font-size="16">88.73% · 740/834</text>
+<text x="30" y="501" font-size="13">78 cached + 463 new · 9 length-limited outputs included · Zero retries</text>
+<text x="30" y="520" font-size="13">Fixed P0; no general-superiority or independent-certification claim.</text>
+</g></svg>
