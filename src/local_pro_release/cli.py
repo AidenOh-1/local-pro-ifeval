@@ -120,6 +120,7 @@ def report_inputs(root,scores,coverage=None):
         require(isinstance(uid,str) and isinstance(v,dict) and set(v)=={'instruction_id_list'} and isinstance(v['instruction_id_list'],list) and len(v['instruction_id_list'])>0,'COVERAGE_SCHEMA')
     return cfg,refs,sc
 def do_report(root,scores,output,coverage=None):
+    """Aggregate stored verdicts; does not rescore raw responses or run a model."""
     cfg,refs,sc=report_inputs(root,scores,coverage)
     out=summary(sc,refs);out.update(config_sha256=sha(root/'config.json'),scores_sha256=sha(scores),public_release=False,independent_hidden=False)
     if coverage is not None:out['synthetic_example_not_benchmark']=True
@@ -128,7 +129,8 @@ def do_report(root,scores,output,coverage=None):
     title='Synthetic usage example — NOT benchmark measurement' if coverage is not None else 'Local Pro P0 / IFEval'
     lines=['# '+title+' — '+out['status'],'',f"Coverage: {len(sc['items'])}/{len(refs)} items. Missing {out['missing']}; unresolved {out['blocked']}.",'','| Metric | Correct | Scored denominator | Accuracy |','|---|---:|---:|---:|']
     for k,v in out['metrics'].items():lines.append(f"| {k} | {v['correct']} | {v['denominator']} | {v['partial_accuracy']} |")
-    lines+=['', 'Observed cached-run resources: '+json.dumps(out['observed_resources'],sort_keys=True), '', 'wall_seconds is generation time, not end-to-end throughput.', '', 'Stored-response rescoring, not new model inference. Public, development-exposed data; not hidden or third-party certification.']
+    description=('Synthetic stored-verdict usage example; not benchmark measurement or raw-response rescoring.' if coverage is not None else 'Report aggregated from stored benchmark verdicts; not raw-response rescoring or new model inference. Public, development-exposed data; not hidden or third-party certification.')
+    lines+=['', 'Recorded resources: '+json.dumps(out['observed_resources'],sort_keys=True), '', 'wall_seconds is recorded generation time, not end-to-end throughput.', '', description]
     publish(dest/'scorecard.md','\n'.join(lines)+'\n');return out
 def do_run(root,output,dry_run,core_root=None,registration_sha256=None):
     if not dry_run:require(core_root is not None and registration_sha256 is not None,'VALID_EXISTING_REGISTRATION_REQUIRED')

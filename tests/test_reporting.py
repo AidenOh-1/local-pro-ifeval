@@ -57,6 +57,25 @@ class ReportingTests(unittest.TestCase):
    for name in ('ifeval.svg','external-context.svg'):self.assertEqual((p/name).read_bytes(),(self.r/'assets'/name).read_bytes())
  def test_external(self):
   x=cli.read(self.r/'results/external_references.json')
-  self.assertEqual([(r['snapshot'],r['value']) for r in x['rows']],[('GPT-4o 0513',84.3),('Claude-3.5-Sonnet-1022',86.5)])
+  self.assertEqual([(r['snapshot'],r['value']) for r in x['rows']],[('GPT-4 (API snapshot unspecified)',76.89),('GPT-4o-mini-2024-07-18',80.4),('GPT-4o 0513',84.3),('Claude-3.5-Sonnet-1022',86.5)])
   self.assertTrue(all(r['verified'] and r['exact_metric']=='IFEval English strict prompt accuracy' for r in x['rows']))
+  import xml.etree.ElementTree as ET
+  with tempfile.TemporaryDirectory() as d:
+   plot_results.build(Path(d));svg=(Path(d)/'external-context.svg').read_text();root=ET.fromstring(svg)
+   texts=[r.text for r in root.iter() if r.tag.endswith('text')]
+   values=[float(r.attrib['data-value']) for r in root.iter() if 'data-value' in r.attrib]
+   self.assertAlmostEqual(values[0],cli.summary(self.s,self.refs)['metrics']['strict_prompt']['full_accuracy']*100,8)
+   self.assertEqual(values[1:],[r['value'] for r in x['rows']])
+   for r in x['rows']:
+    self.assertIn(r['snapshot'],texts)
+    self.assertIn(f"External · {r['reporting_organization']} · {r['evaluation_date'] or 'date unknown'}",texts)
+    self.assertIn('Sources: '+r['source_title'],texts)
+   self.assertIn('IFEval strict prompt-level accuracy',texts)
+   self.assertIn('0%',texts);self.assertIn('100%',texts)
+ def test_report_description(self):
+  with tempfile.TemporaryDirectory() as d:
+   cli.do_report(self.r,self.r/'results/v0.1/scores.json',Path(d)/'real')
+   cli.do_report(self.r,self.r/'examples/verdicts.json',Path(d)/'example',self.r/'examples/coverage.json')
+   self.assertIn('Report aggregated from stored benchmark verdicts',(Path(d)/'real/scorecard.md').read_text())
+   self.assertIn('Synthetic stored-verdict usage example; not benchmark measurement',(Path(d)/'example/scorecard.md').read_text())
 if __name__=='__main__':unittest.main()

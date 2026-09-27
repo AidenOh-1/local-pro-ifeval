@@ -61,13 +61,27 @@ P0: one exact original user message, no added system/few-shot/tools; context8192
 
 All463 new native loads recorded48GiB physical RAM. The referenced **2026-09-09 historical profile** lists Apple M5 Max,18 CPU/40 GPU cores, macOS26.6.2 build25G83; those details are not a fresh per-run attestation. Generation runtime: Python3.12.13, mlx-vlm0.7.0, mlx/mlx-metal0.32.2, transformers5.16.1. Original scorer environment Python3.13.0 with `requirements.lock.txt`. [Environment evidence](results/v0.1/ENVIRONMENT.json).
 
-## Limits, comparison context and credits
+## Reproducibility limits
 
 Public/development-exposed IFEval self-evaluation—not hidden testing, third-party certification, a matched frontier comparison, or evidence of general superiority. Retained verdicts reproduce scores but cannot independently verify the private response text. The original full raw was locally rescored before packaging; this upload does not contain it. No new model performance measurement occurred during packaging.
 
-![Historical reference context](assets/external-context.svg)
+## Historical external comparison context
 
-Different evaluation setups; not a head-to-head comparison. Historical GPT/Claude values are **DeepSeek-reported**, not Local Pro measurements or current frontier claims. See [sources and conditions](docs/EXTERNAL_CONTEXT.md); current models without verified comparable metrics are omitted, not scored zero.
+![IFEval strict prompt-level accuracy](assets/external-context.svg)
+
+Different evaluation setups; not a head-to-head comparison. References include a historical baseline, a nearby value, and higher values—not only results below Local Pro.
+
+| Reference | Strict prompt accuracy | Reporting source |
+|---|---:|---|
+| GPT-4, responses from November 2023; API snapshot unspecified | 76.89% | Original IFEval paper, Table 3 |
+| Local Pro P0 — own measurement | 79.67% | 431/541 stored benchmark verdicts |
+| GPT-4o-mini-2024-07-18 | 80.4% | Qwen3 Technical Report, Table 14 |
+| GPT-4o 0513 | 84.3% | DeepSeek-V3 README |
+| Claude-3.5-Sonnet-1022 | 86.5% | DeepSeek-V3 README |
+
+Local Pro is 2.78 percentage points above the historical GPT-4 reference and 0.73 points below the Qwen-reported GPT-4o mini reference. These numerical differences do not establish general superiority, equivalence, or statistical significance. External values are not Local Pro measurements or current-frontier claims. See [original sources and conditions](docs/EXTERNAL_CONTEXT.md). Ambiguous strict/loose results are excluded rather than used to claim a win.
+
+## Credits and publication status
 
 Qwen supplies the base model; MLX-community supplies the quantized conversion. Aiden's contribution is execution/evaluation integration, tracking, reporting code and reproducibility documentation, with Codex development assistance. No underlying foundation-model training is claimed.
 
